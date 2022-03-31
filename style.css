@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+/* CSS files add styling rules to your content */
+
+/* Custom Properties */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+:root {
+  --primary-color: #1c3fa8; 
+  --secondary-color: rgb(27, 180, 231);
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #00FF00;
+  --error-color: red;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 2em;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  line-height: 1.5;
+}
+
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--light-color);
+  padding: 14px 40px;
+  color: var(--dark-color);
+}
+
+.container *{
+  margin: 10px;
+}
+
+
+p{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#startBtn,
+#stopBtn{
+  padding: 10px 30px;
+  cursor: pointer;
+  color: var(--dark-color);
+  border: none;
+  border-radius: 5px;
+}
+
+#startBtn{
+  background-color: var(--success-color);
+}
+
+#stopBtn{
+  background-color: var(--error-color);
+}
+
+
+#startBtn:hover,
+#stopBtn:hover {
+  transform: scale(0.98);
+}
+
+#gameButtonArea {
+  margin: 8px;
+}
+
+#gameButtonArea > button {
+  width: 230px;
+  height: 230px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+#button1 {
+  background: lightgreen;
+}
+
+#button1:active,
+#button1.lit {
+  background: green;
+}
+
+#button2 {
+  background: lightblue;
+}
+
+#button2:active,
+#button2.lit {
+  background: blue;
+}
+
+#button3 {
+  background: pink;
+}
+
+#button3:active,
+#button3.lit {
+  background: red;
+}
+
+#button4 {
+  background: lightyellow;
+}
+
+#button4:active,
+#button4.lit {
+  background: yellow;
+}
+
+#button5 {
+  background: rgb(255,127,80)
+}
+
+#button5:active,
+#button5.lit {
+  background: rgb(255,0,255);
+}
+
+/*Tablets and mobile responsiveness*/
+
+/* Tablets and under */
+@media (max-width: 768px) {
+
+  .container *{
+    margin: 7px;
+  }
+
+  #gameButtonArea > button {
+    width: 350px;
+    height: 350px;
+  }
+
+  p{
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 23px;
+  }
+}
