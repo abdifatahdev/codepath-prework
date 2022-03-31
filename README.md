@@ -6,7 +6,7 @@ Submitted by: Abdifatah Mohamed
 
 Time spent: 6 hours spent in total
 
-Link to project:
+Link to project: https://humorous-mango-salute.glitch.me/
 
 ## Required Functionality
 
