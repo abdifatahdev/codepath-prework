@@ -11,17 +11,22 @@ var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;  //must be between 0.0 and 1.0
 var guessCounter = 0;
+var mistakeCounter = 3;
 
 
 function startGame(){
     //initialize game variables
     progress = 0;
     gamePlaying = true;
+    mistakeCounter = 3;
       
     // swap the Start and Stop buttons
     document.getElementById("startBtn").classList.add("hidden");
     document.getElementById("stopBtn").classList.remove("hidden");    
     playClueSequence();
+    document.getElementById("strikes").innerHTML = "Attempts left: " + mistakeCounter;  
+  playClueSequence();
+    
   
 }
 
@@ -83,11 +88,22 @@ function guess(btn){
       //so far so good... check the next guess
       guessCounter++;
     }
-  }else{
+  }
+  else {
+    if (mistakeCounter > 1){
+      mistakeCounter--;
+      document.getElementById("strikes").innerHTML = "Attempts left: " + mistakeCounter;
+      playClueSequence();
+      
+    }
+  
+  else{
     //Guess was incorrect
     //GAME OVER: LOSE!
     loseGame();
+    mistakeCounter == 0;
   }
+}
 }
 
 // Sound Synthesis Functions
@@ -95,7 +111,8 @@ const freqMap = {
   1: 261.6,
   2: 329.6,
   3: 392,
-  4: 466.2
+  4: 466.2,
+  5: 500
 }
 
 
