@@ -53,7 +53,9 @@ I used mostly stackOverflow and w3schools. I also used random Google sites to lo
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
 
 I spent majority of my time getting buttons work correctly. Adding functionality user limited amount of time was also challenging.
-Fortunately, I was able to overcome the challenge by reading the documentation of MDN and doing some research on Google. 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words)
+Fortunately, I was able to overcome the challenge by reading the documentation of MDN and doing some research on Google.
+
+3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words)
 
 I don't have a specific question about web development in my mine, but I was amazed and I'm curios more about how the computer machine was able to generate different sounds and tones based off the frequency map numbers that is given to them.
 
