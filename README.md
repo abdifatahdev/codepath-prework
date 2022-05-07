@@ -63,7 +63,7 @@ If I hade some extra time as I currently only have 24 hours left(with other resp
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](https://www.loom.com/share/ab4e6e3ddbcb488fab22ddcc85aa4574)
+[My 5-minute Interview Recording]()
 
 ## License
 
